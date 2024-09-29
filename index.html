@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurezella</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <header class="top-header">
+        <div class="container">
+            <p class="connect-text" data-key="connect">Want to Connect with us?</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i><a href="mailto:support@insurezella.com" data-key="email">Mail us: support@insurezella.com</a></p>
+                <p><i class="fas fa-phone"></i> <span data-key="phone">Call us: (877) 227 0774</span></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Assets/logo.png" alt="Insurezella Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-key="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" data-key="find_insurance">Find Insurance <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-key="health_insurance">Health Insurance</a></li>
+                        <li><a href="#" data-key="medicare_supplement">Medicare Supplement</a></li>
+                        <li><a href="#" data-key="life_insurance">Life Insurance</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-key="learn">Learn</a></li>
+                <li><a href="#" data-key="about">About</a></li>
+            </ul>
+            <a href="#" class="call-button" data-key="call_us">Call Us Now →</a>
+        </div>
+    </nav>
+    <div class="language-dropdown">
+        <button class="language-button">
+            <i class="fas fa-globe"></i> Language
+        </button>
+        <div class="dropdown-content">
+            <a href="#" data-language="en">English</a>
+            <a href="#" data-language="es">Español</a>
+            <a href="#" data-language="fr">Français</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1 data-key="hero_title">YOUR GUIDE TO QUALITY COVERAGE</h1>
+                <p data-key="hero_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="cta-button" data-key="find_plans">FIND PLANS</a>
+            </div>
+            <div class="hero-image">
+                <img src="Assets/hero-bg.jpg" alt="Family Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarjetas de servicios -->
+    <section class="services">
+        <div class="container">
+            <div class="service-card">
+                <img src="Assets/health-insurance-icon.png" alt="Health Insurance Image">
+                <h3 data-key="health_insurance">Health <br>Insurance</h3>
+            </div>
+            <div class="service-card">
+                <img src="Assets/medicare-icon.png" alt="Medicare Supplement Image">
+                <h3 data-key="medicare_supplement">Medicare <br>Supplement</h3>
+            </div>
+            <div class="service-card">
+                <img src="Assets/life-insurance-icon.png" alt="Life Insurance Image">
+                <h3 data-key="life_insurance">Life <br>Insurance</h3>
+            </div>
+            <div class="service-card">
+                <img src="Assets/medicare-advantage-icon.png" alt="Medicare Advantage Image">
+                <h3 data-key="medicare_advantage">Medicare <br>Advantage</h3>
+            </div>
+            <div class="service-card">
+                <img src="Assets/obamacare-icon.png" alt="ACA Obamacare Image">
+                <h3 data-key="obamacare">ACA <br>Obamacare</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de descripción general -->
+    <section class="description">
+        <div class="container">
+            <div class="description-image">
+                <img src="Assets/committed-help.png" alt="Insurance Agent">
+            </div>
+            <div class="description-text">
+                <h2 data-key="committed_help">Committed to help you find the right plan</h2>
+                <p data-key="insurance_importance">Insurance is an important financial tool that can help you protect yourself and your loved ones from financial losses.</p>
+                <a href="#" class="cta-button" data-key="about_insurezella">About Inzurezella</a>
+                <div class="button-logos">
+                    <a href="https://enlace1.com" class="logo-link">
+                        <img src="Assets/medicare-icon.png" alt="Save Money Compare Plans" class="logo-image">
+                        <span class="logo-text" data-key="save_money">Save Money<br> Compare Plans</span>
+                    </a>
+                    <a href="https://enlace2.com" class="logo-link">
+                        <img src="Assets/obamacare-icon.png" alt="Licensed Agents" class="logo-image">
+                        <span class="logo-text" data-key="licensed_agents">Licensed<br> Agents</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h2 class="titulo" data-key="pick_insurance">Pick the insurance that suits your needs.</h2>
+        <div class="contenedor">
+            <div class="fila">
+                <div class="columna">
+                    <img src="Assets/health-insurance-icon.png" alt="Health Insurance" class="logo">
+                    <h3 class="mini-titulo" data-key="health_insurance1">Health Insurance</h3>
+                    <p class="parrafo" data-key="health_insurance_description">Brief overview of content <br>associated with logo 1.</p>
+                </div>
+                <div class="columna">
+                    <img src="Assets/medicare-icon.png" alt="Medicare" class="logo">
+                    <h3 class="mini-titulo" data-key="medicare">Medicare</h3>
+                    <p class="parrafo" data-key="medicare_description">Brief overview of content <br>associated with logo 2.</p>
+                </div>
+                <div class="columna">
+                    <img src="Assets/life-insurance-icon.png" alt="Life Insurance" class="logo">
+                    <h3 class="mini-titulo" data-key="life_insurance1">Life Insurance</h3>
+                    <p class="parrafo" data-key="life_insurance_description">Brief overview of content <br>associated with logo 3.</p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna">
+                    <img src="Assets/medicare-advantage-icon.png" alt="Medicare Advantage" class="logo">
+                    <h3 class="mini-titulo" data-key="medicare_advantage1">Medicare Advantage</h3>
+                    <p class="parrafo" data-key="medicare_advantage_description">Brief overview of content <br>associated with logo 4.</p>
+                </div>
+                <div class="columna">
+                    <img src="Assets/obamacare-icon.png" alt="Obamacare" class="logo">
+                    <h3 class="mini-titulo" data-key="obamacare1">ACA/ Obamacare</h3>
+                    <p class="parrafo" data-key="obamacare_description">Brief overview of content <br>associated with logo 5.</p>
+                </div>
+                <div class="columna">
+                    <img src="Assets/short-term-icon.png" alt="Short Term Insurance" class="logo">
+                    <h3 class="mini-titulo" data-key="short_term_insurance">Short Term Insurance</h3>
+                    <p class="parrafo" data-key="short_term_insurance_description">Brief overview of content <br>associated with logo 6.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de descripción general -->
+    <section class="description">
+        <div class="container">
+            <div class="description-image">
+                <img src="Assets/protecting.png" alt="Insurance Agent">
+            </div>
+            <div class="description-text">
+                <h2 data-key="protecting_people">Protecting people, one policy at a time.</h2>
+                <p data-key="insurance_tool">Insurance is an important financial tool that can help you protect yourself and your loved ones from financial losses.</p>
+                <a href="#" class="cta-button" data-key="learn_more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="help-section">
+        <p class="main-title" data-key="help_title">We're here to help</p>
+        <div class="plans-container">
+    
+            <div class="plan-card">
+                <img src="Assets/doctor.jpg" alt="Health Insurance">
+                <p class="title-health" data-key="health_insurance_title">Health Insurance</p>
+                <p class="description" data-key="health_insurance_description1">Get the Coverage You Need Today. Speak with an Agent to Learn about Our Plan Options Now. Our Health Insurance Agency Provides You with Plans That Meet Your Needs.</p>
+                <a href="#" class="plan-link" data-key="compare_plans">Compare plans</a>
+            </div>
+    
+            <div class="plan-card">
+                <img src="Assets/family-together.jpg" alt="Life Insurance">
+                <p class="title-life" data-key="life_insurance_title">Life Insurance</p>
+                <p class="description" data-key="life_insurance_description1">Life insurance allows you to save and build wealth over time while also protecting your family should the worst happen.</p>
+                <a href="#" class="plan-link" data-key="compare_plans">Compare plans</a>
+            </div>
+    
+            <div class="plan-card">
+                <img src="Assets/medical-appointment.jpg" alt="Medicare Supplement">
+                <p class="title-medicare-supplement" data-key="medicare_supplement_title">Medicare Supplement</p>
+                <p class="description" data-key="medicare_supplement_description1">With Medicare supplements, you won't have medical cost surprises, which could wreck your budget. Medicare supplements can help protect your finances from high costs, which can destroy your nest egg.</p>
+                <a href="#" class="plan-link" data-key="view_plans">View plans</a>
+            </div>
+    
+            <div class="plan-card">
+                <img src="Assets/man-signing.jpg" alt="Medicare Advantage">
+                <p class="title-medicare-advantage" data-key="medicare_advantage_title">Medicare Advantage</p>
+                <p class="description" data-key="medicare_advantage_description1">Medicare Advantage Plans cover all Original Medicare services, and some offer drug, vision, hearing, dental, or wellness coverage.</p>
+                <a href="#" class="plan-link" data-key="view_plans">View plans</a>
+            </div>
+    
+        </div>
+    </section>
+    
+    <!-- Footer flotante -->
+    <footer class="footer-floating">
+        <div class="container footer-container">
+            <!-- Logo y texto de descripción -->
+            <div class="footer-logo">
+                <img src="Assets/logo.png" alt="Logo Insurezella">
+                <p data-key="footer_description">"Discover the Peace of <br>Mind You Deserve with <br>Insurezella 'Your Reliable <br>Insurance Umbrella'"</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Links de Servicios -->
+            <div class="footer-links">
+                <h3 data-key="services_title">Services</h3>
+                <ul>
+                    <li><i class="fas fa-umbrella"></i><a href="#" data-key="health_insurance1">Health Insurance</a></li>
+                    <li><i class="fas fa-file-alt"></i><a href="#" data-key="life_insurance1">Life Insurance</a></li>
+                    <li><i class="fas fa-pills"></i><a href="#" data-key="medicare_supplement">Medicare Supplement</a></li>
+                    <li><i class="fas fa-notes-medical"></i><a href="#" data-key="medicare_advantage1">Medicare Advantage</a></li>
+                    <li><i class="fas fa-users"></i><a href="#" data-key="obamacare1">(ACA) Obamacare</a></li>
+                </ul>
+            </div>
+    
+            <!-- Links de la Empresa -->
+            <div class="footer-company">
+                <h3 data-key="company_title">Company</h3>
+                <ul>
+                    <li><a href="#" data-key="about_us">About Us</a></li>
+                    <li><a href="#" data-key="careers">Careers</a></li>
+                    <li><a href="#" data-key="industry_news">Industry News</a></li>
+                    <li><a href="#" data-key="privacy_policy">Privacy Policy</a></li>
+                    <li><a href="#" data-key="terms_conditions">Terms & Conditions</a></li>
+                </ul>
+            </div>
+    
+            <!-- Información de Contacto -->
+            <div class="footer-contact">
+                <h3 data-key="contact_title">Get In Touch</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:support@insurezella.com" data-key="email1">support@insurezella.com</a></li>
+                    <li><i class="fas fa-phone"></i> Tel: <a href="tel:+18772270774" data-key="phone">+1 877 227 0774</a></li>
+                    <li class="icon-centered">
+                        <i class="fas fa-clock"></i>
+                        <div class="multiline-text">
+                            <span data-key="working_hours">Mon-Fri 9:00 AM - 5:00 PM</span>
+                        </div>
+                    </li>
+                    <li class="icon-centered">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="multiline-text">
+                            <span data-key="address_line1">300 SE 2nd Street Suite 600</span>
+                            <span data-key="address_line2">Ft. Lauderdale FL 33301</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<!-- Sección de fondo azul bajo el footer -->
+<div class="footer-background"></div>
+
+<script src="language-switcher.js"></script>
+
+</body>
+</html>

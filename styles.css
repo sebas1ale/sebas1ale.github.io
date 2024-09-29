@@ -1,0 +1,596 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.connect-text {
+    padding-left: 10%;
+    font-size: 20px;
+}
+
+.contact-info {
+    padding-right: 10%;
+}
+
+.contact-info a{
+    text-decoration:  none;
+    color: white;
+}
+
+/* Top header */
+.top-header {
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header .connect-text {
+    font-weight: bold;
+}
+
+.top-header .contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.top-header i {
+    margin-right: 5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #f1f1f1;
+}
+
+.navbar .logo img {
+    width: 50px;
+    border-radius: 20%;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: max-content;
+}
+
+.navbar ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar ul li .dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.navbar ul li .dropdown-menu li a {
+    color: #000000;
+}
+
+.call-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.call-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between; /* El texto y la imagen están alineados horizontalmente */
+    align-items: center; /* Alineación vertical */
+    padding: 0; /* Elimina el padding del contenedor */
+    background: url('Assets/hero.bg.png') no-repeat center/cover; /* Imagen de fondo */
+}
+
+.hero-text {
+    width: 50%;
+    padding-left: 20px; /* Ajusta el espacio alrededor del texto */
+}
+
+.hero-text h1 {
+    color: #007bff;
+    font-size: 48px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.1); /* Un agrandamiento sutil para que sea más atractivo */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para hacer que se destaque más */
+  }
+  
+
+.hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+}
+
+.hero-image img {
+    display: block; /* Hace que el comportamiento de la imagen sea de bloque */
+    width: auto;
+    max-width: 100%; /* Se asegura de que la imagen no exceda su contenedor */
+    height: 430px; /* Ajusta la altura */
+    object-fit: cover; /* Mantiene la proporción sin deformar la imagen */
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina cualquier padding */
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around; /* Usa space-around para más espacio */
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea si no hay suficiente espacio */
+    margin: 50px 0;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3); /* Aumenté la opacidad y el difuminado */
+    border-radius: 10px;
+    flex-basis: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1 1 30%; /* Cada tarjeta ocupa al menos 30% del espacio disponible */
+    margin: 10px; /* Espacio entre tarjetas */
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 14px;
+    flex-grow: 1; /* Permite que el párrafo crezca para ocupar el espacio disponible */
+}
+
+.service-card img {
+    width: 50%; /* Ajusta este valor según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;  /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+}
+
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 -5px 9px rgba(0, 0, 0, 0.2);
+}
+
+/* Description Section */
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 50px 0;
+}
+
+.description-image img {
+    width: 400px;
+}
+
+.description-text {
+    width: 50%;
+}
+
+.description-text h2 {
+    font-size: 48px;
+    color: #333;
+}
+
+.description-text p {
+    font-size: 16px;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+/*logos*/
+.button-logos {
+    display: flex;
+    justify-content: left; /* Centra los elementos en el contenedor */
+    align-items: center;
+    margin-top: 40px; /* Espaciado superior */
+}
+
+.logo-link {
+    display: flex; /* Flexbox para alinear imagen y texto */
+    align-items: center; /* Centra verticalmente */
+    margin: 0 20px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    color: #000000; /* Color del texto (ajusta si es necesario) */
+}
+
+.logo-image {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: 50px; /* Ajusta el tamaño del logo */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+.logo-text {
+    font-weight: bold; /* Negrita para el texto */
+}
+
+/* seccion de en medio */
+.seccion {
+    background-color: #b3ddf8; /* Color cian claro */
+    padding: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fila {
+    display: flex;
+    justify-content: center; /* Cambia a center */
+    margin-bottom: 20px; /* Reduce el margen */
+  }
+  
+  .columna {
+    width: calc(33.33% - 20px);
+    margin: 20px;
+    text-align: center;
+    min-height: 200px; /* Agrega una altura mínima */
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  align-self: center; /* Centra la imagen */
+}
+
+.mini-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  white-space: nowrap; /* Evita que el texto se achique */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+  width: 100%; /* Ocupa el ancho completo */
+}
+  .parrafo {
+    font-size: 14px;
+    color: #666;
+    flex-grow: 1; /* Ocupa el espacio restante */
+  }
+
+/*plan cards*/
+.help-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 2rem; /* Separación entre las tarjetas */
+    justify-content: center; /* Centramos las columnas */
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra ligera, no borde */
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido */
+    height: 100%; /* Asegura que las tarjetas tengan la misma altura */
+}
+
+.plan-card:hover {
+    transform: translateY(-5px); /* Efecto suave al pasar por encima */
+}
+
+.plan-card img {
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.title-health, .title-life, .title-medicare-supplement, .title-medicare-advantage {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #222;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+    flex-grow: 1; /* El párrafo ocupa el espacio disponible */
+}
+
+.plan-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto; /* Alinea el link al final */
+}
+
+.plan-link::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: margin-left 0.3s ease;
+}
+
+.plan-link:hover::after {
+    margin-left: 1rem;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .plans-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+/* Fondo azul bajo el footer */
+.footer-background {
+    background-color: #007bff;
+    height: 100px; /* Ajusta la altura según necesites */
+    width: 100%;
+}
+
+/* Footer flotante */
+.footer-floating {
+    background-color: white;
+    width: 80%; /* Hace que el footer solo ocupe el 90% del ancho */
+    margin: 30px auto -50px auto; /* Mueve el footer hacia arriba para que flote sobre la sección anterior */
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de flotación */
+    position: relative; /* Asegura que esté bien posicionado sobre el fondo azul */
+    z-index: 10; /* Coloca el footer encima de otras secciones */
+}
+
+/* Estilos adicionales del footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 60px;
+    border-radius: 15px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer-links, .footer-company {
+    width: 20%;
+}
+
+.footer-contact {
+    width: 28%;
+}
+
+.footer-links ul, .footer-company ul, .footer-contact ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-links ul li, .footer-company ul li, .footer-contact ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a, .footer-company ul li a, .footer-contact ul li {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Eliminar el subrayado de los enlaces de email y teléfono */
+.footer-contact ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Mismo color que las demás líneas */
+}
+
+/* Icono centrado entre las líneas de texto para "horas" y "dirección" */
+.footer-contact ul li i {
+    margin-right: 10px; /* Añade espacio entre el icono y el texto */
+}
+
+.footer-contact ul li {
+    display: flex; /* Hace que el icono y el texto se alineen horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.footer-contact ul li .multiline-text {
+    display: flex;
+    flex-direction: column; /* Muestra las dos líneas de texto en una columna */
+}
+
+.footer-contact ul li .multiline-text span {
+    display: block;
+}
+
+.footer-contact ul li .icon-centered {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-contact ul li .icon-centered i {
+    align-self: center; /* Asegura que el icono esté centrado entre las dos líneas de texto */
+    margin-right: 15px; /* Espacio entre el icono y las dos líneas */
+}
+
+/* FontAwesome icons */
+.fas, .fab {
+    margin-right: 10px;
+}
+
+.language-dropdown {
+    position: absolute; /* Para colocar el menú en la parte superior derecha */
+    top: 15px; /* Ajusta la distancia desde la parte superior */
+    right: 50px; /* Aumenta este valor para moverlo más a la izquierda */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+
+.language-button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.language-button i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.dropdown-content {
+    display: none; /* Ocultar el contenido por defecto */
+    position: absolute;
+    background-color: #f9f9f9; /* Fondo del menú */
+    min-width: 160px; /* Ancho mínimo */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1; /* Asegurar que esté encima de otros elementos */
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block; /* Mostrar el contenido al pasar el mouse */
+}
+
+.dropdown-content a {
+    color: black; /* Color de texto */
+    padding: 12px 16px; /* Espaciado */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Bloquear el enlace */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
